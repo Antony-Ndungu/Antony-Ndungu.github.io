@@ -1,0 +1,28 @@
+@import "w3css";
+@import "theme";
+
+$font-family: "Roboto", sans-serif;
+
+body, html {
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-image: url(../images/large-leather.png);
+    font-family: $font-family;
+    min-height: 150%;
+}
+
+.home {
+    background-image: url(../images/home.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.w3-bar-block .w3-bar-item {
+    padding: 16px;
+    font-weight: bold;
+}

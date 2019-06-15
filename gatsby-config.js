@@ -5,5 +5,25 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Antony Ndungu",
+    author: "Antony Ndungu Maina"
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`, 
+    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: []
+      }
+    }
+  ]
 }
