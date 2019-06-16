@@ -6,6 +6,7 @@ const Layout = (props) => {
     return (
         <div>
             <Header />
+            <p class="w3-center">Under Construction</p>
             {props.children}
             <Footer/>
         </div>
