@@ -19,28 +19,27 @@ export default () => (
         <Helmet>
             <title>Antony Ndungu</title>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         </Helmet>
         <div className="">
-            <div className="w3-bar w3-large w3-light-grey w3-padding w3-card" style={{ letterSpacing: "4px"}}>
+            <div className="w3-bar w3-medium w3-padding w3-card" style={{ letterSpacing: "4px"}}>
                 <div className="w3-content">
-                <Link to="/" className="w3-bar-item w3-button">
+                <Link to="/" className="w3-bar-item w3-button w3-hover-light-gray">
                     <img src={logo} alt="logo" height="45px"/>
                 </Link>
                 <div className="w3-right w3-padding-top">
-                    <Link to="/" className="w3-bar-item w3-button w3-hover-none w3-hover-text-theme w3-hover-white w3-hide-small" activeClassName="w3-bottombar w3-white w3-border-theme w3-text-theme">Home</Link>
-                    <Link to="/blog" className="w3-bar-item w3-button w3-hover-none w3-mobile w3-hover-text-theme w3-hover-white w3-hide-small" activeClassName="w3-bottombar w3-white w3-border-theme w3-text-theme">Blog</Link>
-                    <Link to="/about" className="w3-bar-item w3-button w3-hover-none w3-mobile w3-hover-text-theme w3-hide-small w3-hover-white" activeClassName="w3-bottombar w3-white w3-border-theme w3-text-theme">About</Link>
-                    <Link to="/contact" className="w3-bar-item w3-button w3-hover-none w3-mobile w3-hover-text-theme w3-hide-small w3-hover-white" activeClassName="w3-bottombar w3-white w3-border-theme w3-text-theme">Contact</Link>
+                    <Link to="/" className="w3-bar-item w3-button w3-hover-none w3-hover-text-theme w3-hover-light-gray w3-hide-small" activeClassName="w3-bottombar w3-light-gray w3-border-theme w3-text-theme">Home</Link>
+                    <Link to="/blog" className="w3-bar-item w3-button w3-hover-none w3-mobile w3-hover-text-theme w3-hover-light-gray w3-hide-small" activeClassName="w3-bottombar w3-light-gray w3-border-theme w3-text-theme">Blog</Link>
+                    <Link to="/about" className="w3-bar-item w3-button w3-hover-none w3-mobile w3-hover-text-theme w3-hide-small w3-hover-light-gray" activeClassName="w3-bottombar w3-light-gray w3-border-theme w3-text-theme">About</Link>
                 </div>
                 <button className="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onClick={handleClick}>&#9776;</button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" className="w3-bar-block w3-xlarge w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+        <div id="mobile-menu" className="w3-bar-block w3-large w3-hide w3-hide-large w3-hide-medium">
             <Link to="/" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-theme w3-hover-text-theme w3-center" activeClassName="w3-theme">Home</Link>
             <Link to="/blog" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-theme w3-hover-text-theme w3-center" activeClassName="w3-theme">Blog</Link>
             <Link to="/about" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-theme w3-hover-text-theme w3-center" activeClassName="w3-theme">About</Link>
-            <Link to="/contact" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-theme w3-hover-text-theme w3-center" activeClassName="w3-theme">Contact</Link>
         </div>
     </header> 
 );

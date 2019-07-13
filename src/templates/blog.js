@@ -23,10 +23,9 @@ export default (props) => {
           <p>{props.data.markdownRemark.frontmatter.date}</p>
           <div
             dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-          ></div>
-        </div><footer className="w3-container w3-center" style={{ padding: ".2rem", opacity: 0 }}>
-          <p className="w3-small">Created by Antony Ndungu, &copy; 2019</p>
-        </footer>
+          >
+          </div>
+        </div>
       </div>
     </Layout>
   );

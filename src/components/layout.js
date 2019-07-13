@@ -6,9 +6,11 @@ const Layout = (props) => {
     return (
         <div>
             <Header />
-            <p class="w3-center">Under Construction</p>
             {props.children}
-            <Footer/>
+            <footer className="w3-container w3-center" style={{ padding: ".2rem", opacity: 0 }}>
+                <p className="w3-small">Created by Antony Ndungu, &copy; 2019</p>
+            </footer>
+            <Footer />
         </div>
     );
 }

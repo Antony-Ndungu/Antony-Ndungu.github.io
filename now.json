@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "personal-site",
+    "alias": "antony.co.ke",
     "builds": [
       {
         "src": "package.json",

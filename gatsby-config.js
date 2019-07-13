@@ -24,6 +24,19 @@ module.exports = {
       options: {
         plugins: []
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Antony Ndungu",
+        short_name: "Antony",
+        start_url: "/",
+        background_color: "#F1F1F1",
+        theme_color: "#F1F1F1",
+        display: "standalone",
+        icon: "src/images/favicon-16x16.png",
+        crossOrigin: "use-credentials"
+      }
     }
   ]
 }
