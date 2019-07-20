@@ -3,8 +3,6 @@ import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import logo from "../images/logo.png";
 
-import "../styles/index.scss";
-
 const handleClick = (e) => {
     let mobileMenu = document.getElementById("mobile-menu");
     if (mobileMenu.className.indexOf("w3-show") === -1) {
@@ -25,7 +23,7 @@ export default () => (
             <div className="w3-bar w3-medium w3-padding w3-card" style={{ letterSpacing: "4px"}}>
                 <div className="w3-content">
                 <Link to="/" className="w3-bar-item w3-button w3-hover-light-gray">
-                    <img src={logo} alt="logo" height="45px"/>
+                    <img src={logo} alt="logo" height="38px"/>
                 </Link>
                 <div className="w3-right w3-padding-top">
                     <Link to="/" className="w3-bar-item w3-button w3-hover-none w3-hover-text-theme w3-hover-light-gray w3-hide-small" activeClassName="w3-bottombar w3-light-gray w3-border-theme w3-text-theme">Home</Link>
@@ -37,9 +35,9 @@ export default () => (
             </div>
         </div>
         <div id="mobile-menu" className="w3-bar-block w3-large w3-hide w3-hide-large w3-hide-medium">
-            <Link to="/" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-theme w3-hover-text-theme w3-center" activeClassName="w3-theme">Home</Link>
-            <Link to="/blog" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-theme w3-hover-text-theme w3-center" activeClassName="w3-theme">Blog</Link>
-            <Link to="/about" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-theme w3-hover-text-theme w3-center" activeClassName="w3-theme">About</Link>
+            <Link to="/" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar  w3-hover-text-theme w3-center" activeClassName="w3-theme">Home</Link>
+            <Link to="/blog" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar  w3-hover-text-theme w3-center" activeClassName="w3-theme">Blog</Link>
+            <Link to="/about" className="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar  w3-hover-text-theme w3-center" activeClassName="w3-theme">About</Link>
         </div>
     </header> 
 );
